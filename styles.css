@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/**********Start of header area**********/
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 35px 80px;
+}
+
+
+
+li, a {
+    font: 400 16px/1.5 "Montserrat", sans-serif; 
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+nav a:hover {
+    color: lightseagreen;
+}
+
+
+@media (max-width:1000px){
+    header {
+        padding: 35px 50px;
+    }
+}
+
+@media (max-width:750px){
+    header {
+        flex-direction: column;
+        
+    }
+    
+    header nav{
+        display: none;
+    }
+}
+/**********End of header area **********/
+
+/**********Start of banner area ********/
+
+.banner-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 80px;
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: left;
+    color: #fff;
+}
+
+.banner-area .banner-img {
+    background: url(/images/Grouphero.png) top no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 0;
+}
+
+
+.banner-area h1  {
+    font: 100 88px/1.5 "Gentium Basic", sans-serif;
+    margin-bottom: 15px;
+    z-index: 1;
+
+}
+
+.banner-area p {
+    max-width: 750px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.banner-area a.contact-btn {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.banner-area a.contact-btn:hover {
+    border: 1px solid currentColor;
+    color: #3587b6;
+}
+
+
+
+
+@media (max-width: 1000px){
+    .banner-area {
+        padding: 150px 50px;
+    }
+}
+
+
+
+@media(max-width:750px){
+    .banner-area{
+        max-height: 600px;
+        align-items: center;
+        padding: 0 50px;
+        text-align: center;
+    }
+    .banner-area h1 {
+        font-size: 50px;
+        margin-top: 50px;
+        
+
+    }
+
+    .banner-area p {
+        font-size: 16px;
+    }
+}
+
+/***** (start) of Engingeering and training page to banner area*****/
+
+
+
+.page-banner {
+    min-height: 50vh;
+}
+
+.page-banner h1 {
+    margin: 20px 0 0 0;
+}
+
+.page-banner a {
+    display: none;
+}
+
+@media (max-width:750px){
+    .page-img, .page-banner{
+        min-height: 100vh;
+        background-position: center;
+    }
+    .page-banner a{
+        margin-top: 35px;
+        display: block;
+        
+    }
+
+
+}
+
+
+/***** (end) of Engingeering and training page to banner area*****/
+
+
+
+
+/********** End of banner area **********/
+
+
+
+/********** Start of panel section *******/
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0px;
+}
+
+
+
+.panel div {
+    flex: 50%;
+    max-width: 50%;
+}
+
+
+.mission-text ul li{
+    margin: 10px 0px 0 20px;
+    list-style-type: circle;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.panel-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+}
+
+
+
+.panel-text {
+    background-color: rgb(241, 241, 241);
+    padding: 80px;
+
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 15px 0;
+    background-color:rgb(20, 63, 95);
+}
+
+.panel-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.panel-text p {
+    font-size: 18px;
+    margin: 10px 0px;
+    line-height: 1.6;
+}
+
+.panel-text a.contact-btn {
+    color: #000;
+    display: block;
+    width: 120px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.panel-text a.contact-btn:hover {
+    border: 1px solid #3587b6;
+    color: #3587b6;
+    transition: 0.5s;
+
+}
+
+.focus-text {
+    background: none;
+}
+
+.focus-img {
+    min-height: 600px;
+}
+
+
+.about-pic {
+    background-image: url(/images/center-pic.png);
+}
+
+.engineering-pic {
+    background-image: url(/images/right-pic.png);
+}
+
+.training-pic {
+    background-image: url(/images/left-pic.png);
+    background-position: top;
+}
+
+.mission-img {
+    background-image: url(/images/left-pic.png);
+}
+
+.services-img{
+    background-image: url(/images/services.png);
+}
+
+/* .arrange { 
+    flex-direction: row-reverse;
+
+}
+*/
+@media(max-width:1000px){
+    .focus-img{
+        min-height: 300px;
+    }
+}
+
+@media(max-width:1000px){
+    .panel div {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .panel-text{
+        padding: 50px;
+        
+    }
+    .panel-text h2 {
+        font-size: 24px;
+    }
+    .panel-text p {
+        font-size: 16px;
+    }
+
+    .order-one{
+        order: 1;
+    }
+    .order-two{
+        order: 0;
+    }
+    .order-three{
+        order: 2 ;
+    }
+    .order-four{
+        order: 3;
+    }
+}
+
+@media(max-width:750px){
+    .panel{
+        margin: 0;
+    }
+}
+
+    
+
+
+/********** End of panel section ***********/
+
+/********** Start of Contact section *********/
+
+    /******* Start of left side Contact section ******/
+
+
+
+.contact-section p:nth-child(4) {
+    border-top: 2px solid rgb(241, 241, 241);
+    border-bottom: 2px solid rgb(241, 241, 241);
+}
+
+.information {
+    margin: 0px;
+    padding: 15px;
+}
+
+.information i {
+    margin-right: 20px;
+    color: rgb(20, 63, 95);
+}
+
+.information a {
+    color: #000;
+}
+
+@media (max-width:750px){
+    .information i {
+        display: block;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .information {
+        display: block;
+        text-align: center;
+    }
+}
+
+    /******* End of left side Contact section ******/
+
+    /******* Start of right form side Contact section ******/
+
+    form input, textarea, button {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        
+        }
+    
+    .area-box {
+        width: 100%;
+        height: 60px;
+        border-radius: 5px;
+        border: 1px solid rgb(20, 63, 95);
+    }
+    
+    textarea {
+        width: 100%;
+        height: 250px;
+        border-radius: 5px;
+        border: 1px solid rgb(20, 63, 95);
+    }
+
+
+    button {
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+        transition: 0.5s;
+        background-color: rgb(20, 63, 95);
+    }
+    
+    button:hover {
+        color: #fff;
+        background-color: #3587b6;
+    }
+
+/********** End of Contact section *********/
+
+
+ /******** Start of Footer section ********/
+footer {
+    background-color: rgb(241, 241, 241);
+    padding: 25px 80px;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+    
+
+footer nav li {
+    padding: 0 20px;
+}
+
+footer nav li:first-child{
+    padding-left: 0px;
+}
+
+.footer-links {
+    color: #000;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media (max-width:1000px){
+    footer nav li {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width:750px){
+    footer div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    footer div p {
+        margin-top: 10px;
+    }
+
+}
+/********** End of Contact section *********/
